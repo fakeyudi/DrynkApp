@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0A76F226124E5B0049280F /* Local Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A76F126124E5B0049280F /* Local Notifications.swift */; };
+		AF0A76FA26131C700049280F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A76F926131C700049280F /* HistoryViewController.swift */; };
+		AF0A76FF26131C7F0049280F /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A76FE26131C7F0049280F /* HistoryTableViewCell.swift */; };
+		AF0A770426131DA50049280F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A770326131DA50049280F /* DataModel.swift */; };
 		AF911A0D2611F9C7003A26FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF911A0C2611F9C7003A26FC /* AppDelegate.swift */; };
 		AF911A0F2611F9C7003A26FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF911A0E2611F9C7003A26FC /* SceneDelegate.swift */; };
 		AF911A112611F9C7003A26FC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF911A102611F9C7003A26FC /* StartViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0A76F126124E5B0049280F /* Local Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Local Notifications.swift"; sourceTree = "<group>"; };
+		AF0A76F926131C700049280F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		AF0A76FE26131C7F0049280F /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		AF0A770326131DA50049280F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		AF911A092611F9C7003A26FC /* Drynk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drynk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF911A0C2611F9C7003A26FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF911A0E2611F9C7003A26FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0A770B26133BDD0049280F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A76F926131C700049280F /* HistoryViewController.swift */,
+				AF0A76FE26131C7F0049280F /* HistoryTableViewCell.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		AF0A770F26133BF20049280F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A770B26133BDD0049280F /* History */,
+				AF911A102611F9C7003A26FC /* StartViewController.swift */,
+				AF911A472611FF6D003A26FC /* CountViewController.swift */,
+				AF911A512612054A003A26FC /* SetDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF0A771326133C100049280F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF911A4C2611FFB9003A26FC /* AppConstants.swift */,
+				AF911A56261205CA003A26FC /* UserData.swift */,
+				AF0A770326131DA50049280F /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF0A771726133C290049280F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF911A122611F9C7003A26FC /* Main.storyboard */,
+				AF911A152611F9C8003A26FC /* Assets.xcassets */,
+				AF911A172611F9C8003A26FC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF0A771826133C3D0049280F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF911A0C2611F9C7003A26FC /* AppDelegate.swift */,
+				AF911A0E2611F9C7003A26FC /* SceneDelegate.swift */,
+				AF911A3F2611FE86003A26FC /* Switcher.swift */,
+				AF911A5B26120CEA003A26FC /* AlertTrigger.swift */,
+				AF0A76F126124E5B0049280F /* Local Notifications.swift */,
+				AF911A1A2611F9C8003A26FC /* Info.plist */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		AF911A002611F9C7003A26FC = {
 			isa = PBXGroup;
 			children = (
@@ -111,19 +172,10 @@
 		AF911A0B2611F9C7003A26FC /* Drynk */ = {
 			isa = PBXGroup;
 			children = (
-				AF911A0C2611F9C7003A26FC /* AppDelegate.swift */,
-				AF911A0E2611F9C7003A26FC /* SceneDelegate.swift */,
-				AF911A102611F9C7003A26FC /* StartViewController.swift */,
-				AF911A472611FF6D003A26FC /* CountViewController.swift */,
-				AF911A512612054A003A26FC /* SetDetailsViewController.swift */,
-				AF911A122611F9C7003A26FC /* Main.storyboard */,
-				AF911A152611F9C8003A26FC /* Assets.xcassets */,
-				AF911A3F2611FE86003A26FC /* Switcher.swift */,
-				AF911A4C2611FFB9003A26FC /* AppConstants.swift */,
-				AF911A5B26120CEA003A26FC /* AlertTrigger.swift */,
-				AF911A56261205CA003A26FC /* UserData.swift */,
-				AF911A172611F9C8003A26FC /* LaunchScreen.storyboard */,
-				AF911A1A2611F9C8003A26FC /* Info.plist */,
+				AF0A771826133C3D0049280F /* Utilities */,
+				AF0A770F26133BF20049280F /* Controller */,
+				AF0A771726133C290049280F /* View */,
+				AF0A771326133C100049280F /* Model */,
 			);
 			path = Drynk;
 			sourceTree = "<group>";
@@ -281,6 +333,10 @@
 				AF911A57261205CA003A26FC /* UserData.swift in Sources */,
 				AF911A0D2611F9C7003A26FC /* AppDelegate.swift in Sources */,
 				AF911A522612054A003A26FC /* SetDetailsViewController.swift in Sources */,
+				AF0A76FA26131C700049280F /* HistoryViewController.swift in Sources */,
+				AF0A770426131DA50049280F /* DataModel.swift in Sources */,
+				AF0A76FF26131C7F0049280F /* HistoryTableViewCell.swift in Sources */,
+				AF0A76F226124E5B0049280F /* Local Notifications.swift in Sources */,
 				AF911A402611FE86003A26FC /* Switcher.swift in Sources */,
 				AF911A0F2611F9C7003A26FC /* SceneDelegate.swift in Sources */,
 				AF911A482611FF6D003A26FC /* CountViewController.swift in Sources */,
@@ -462,7 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5966D3T864;
-				INFOPLIST_FILE = Drynk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Drynk/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5966D3T864;
-				INFOPLIST_FILE = Drynk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Drynk/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
